@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <com.example.view.HomeImgScroll 
+       android:id="@+id/imgweb_home_imgscroll"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"         
+        ></com.example.view.HomeImgScroll>
+    <LinearLayout
+        android:id="@+id/vb"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="3dip"
+        android:gravity="end"
+        android:orientation="horizontal" >
+    </LinearLayout>
+</LinearLayout>

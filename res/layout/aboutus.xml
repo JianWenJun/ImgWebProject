@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:background="#FFFFFF"
+    android:contentDescription="@string/app_name"
+    >
+
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/ItemText1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:drawableTop="@drawable/logo"
+        android:textSize="35dp"
+        android:text="irides"
+        android:layout_below="@+id/ItemImage"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/ItemText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="V 1.0"
+        android:layout_below="@+id/ItemText1"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/ItemText3"
+        android:layout_below="@+id/ItemText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="功能介绍"
+        />
+    <TextView
+        android:layout_below="@+id/ItemText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="        图片网是中国矿业大学学生在线创作的中国矿业大学图片分享和图片上传平台，整合了优质图片资源，目前拥有10000多张图片，内容涵盖了照片、矢量图及插画；我们的图片数量还在不断增加中。"
+        android:id="@+id/textView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="制作者：@学生在线"
+        android:id="@+id/textview4"
+        android:checked="false"
+        android:layout_above="@+id/textView3"
+        android:layout_alignLeft="@+id/ItemText1"
+        android:layout_alignStart="@+id/ItemText1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="              联系方式：1536240065@qq.com"
+        android:id="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

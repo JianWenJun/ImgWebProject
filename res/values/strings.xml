@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">图片网</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <color name="green">#31C27C</color>
+       <color name="gray_white">#99ffff</color>
+       <color name="hui">#7f7e7b</color>
+       <color name="translucent_background">#80000000</color> 
+       <color name="actionbar_bg">#00C5CD</color>
+</resources>

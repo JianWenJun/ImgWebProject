@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/listview_comment"
+    android:scrollbarStyle="outsideOverlay"    
+    android:listSelector="#00000000"
+   >
+   
+</ListView>
+<!-- xmlns:pla="http://schemas.android.com/apk/res/com.example.imgweb"
+命名空间后面的包名应该是AndroidManifest.xml文件中定义的package包名，
+而不是我使用的这个自定义控件所处的包的包名 
+ <ListView 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/listview_comment"
+        />-->

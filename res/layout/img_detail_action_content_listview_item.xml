@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+            <com.example.view.CircularImage
+                android:id="@+id/img_detail_imgc"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img10" />
+
+            <TextView
+                android:id="@+id/img_detail_img_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/img_detail_imgc"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/img_detail_imgc"
+                android:text="用户名"
+                android:textSize="15sp" />
+
+            <FrameLayout 
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:id="@+id/img_state"
+                android:layout_alignBottom="@id/img_detail_img_user"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="12dp"                
+                >                
+                <ImageView 
+                    android:id="@+id/img_detail_img_comment_submit"
+                    android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:visibility="visible"
+                    android:background="@drawable/comment_submit"/>
+                <ImageView 
+                     android:id="@+id/img_detail_img_comment_delete"
+                     android:layout_width="25dp"
+                    android:layout_height="20dp"
+                    android:visibility="gone"
+                    android:background="@drawable/commnet_delete"/>
+            </FrameLayout>
+            
+            <TextView
+                android:id="@+id/img_detail_img_uptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_detail_img_user" 
+                android:layout_toLeftOf="@id/img_state"             
+                android:layout_marginRight="12dp"
+                android:text="2015-6-8"
+                android:textColor="#808080"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/img_detail_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_detail_img_user"
+                android:layout_alignLeft="@+id/img_detail_img_user"           
+                android:textSize="13sp"
+                android:layout_marginTop="4dp"
+                android:text="不错" />
+            
+</RelativeLayout>

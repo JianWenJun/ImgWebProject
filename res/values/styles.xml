@@ -1,0 +1,77 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+<!--     界面透明 -->
+<style 
+    name="loginactivitytheme"
+    parent="@android:style/Theme"
+    >    
+    <item name="android:windowIsTranslucent">true</item>    
+</style>
+  <style name="translucent">  
+    <item name="android:windowBackground">@color/translucent_background</item>  
+    <item name="android:windowIsTranslucent">true</item>  
+    <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>  
+  </style>
+<!-- 加载对话框的风格 -->
+<style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+<style
+     name="LoadDialogStyle"  parent="@style/CustomDialog">
+   <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        
+</style>
+ <style name="imgdeatil" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+        <!-- 加载评论对话框的风格 -->
+     <style name="comment_dialog_theme" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@drawable/comment_dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+     <!--图片详情界面的 分享和更多的菜单 -->
+ <style name="ShareItemPopWindow" parent="android:Animation" mce_bogus="1" >
+     <item name="android:windowEnterAnimation">@anim/pop_entry</item>
+     <item name="android:windowExitAnimation">@anim/pop_exit</item>
+     
+ </style>
+<!--  分享对话框 -->
+  <style name="shareDialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/mystyle</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 背景有灰度 -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="mystyle" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/slide_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+</resources>

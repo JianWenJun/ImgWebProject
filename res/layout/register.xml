@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+        android:background="#FAEBD7"
+   >
+     <ImageView
+        android:id="@+id/register_touxiang"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/touxiang_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_touxiang"
+        android:layout_centerHorizontal="true"
+        android:text="图片网"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/register_user"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/touxiang_add"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="请输入用户名" />
+
+    <EditText
+        android:id="@+id/register_mm"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/register_user"
+        android:layout_below="@+id/register_user"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:hint="请设置密码" >
+    </EditText>
+    <EditText
+        android:id="@+id/register_eamil"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/register_mm"
+        android:layout_below="@+id/register_mm"
+        android:ems="20"
+        android:hint="请输入邮箱" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/register_yzm"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/register_eamil"
+        android:layout_below="@+id/register_eamil"
+        android:layout_toRightOf="@+id/touxiang_add"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="验证码"
+        >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/register_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/havename"
+        android:layout_alignBottom="@+id/havename"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/havename"
+        android:text="直接登录" 
+        android:textColor="#00FFFF"
+        />
+
+    <ImageView
+        android:id="@+id/register_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/register_touxiang"
+        android:layout_toRightOf="@+id/register_user"
+        android:src="@drawable/dot"/>
+
+    <TextView
+        android:id="@+id/havename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/register_eamil"
+        android:layout_below="@+id/register_yzm"
+        android:layout_marginTop="34dp"
+        android:text="已经有图片网账号"
+        android:textColor="#000000" />
+    <ImageView
+        android:id="@+id/register_getyzm"
+        android:layout_width="48px"
+        android:layout_height="22px"
+        android:layout_alignBottom="@+id/register_yzm"
+        android:layout_alignLeft="@+id/register_eamil"
+        android:layout_alignTop="@+id/register_yzm"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/login_no_net"
+        android:layout_toLeftOf="@+id/register_login"
+         />
+    <Button
+        android:id="@+id/register_register"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/havename"
+        android:layout_below="@+id/register_login"
+        android:text="快速注册" 
+        android:background="#87CEEB"
+        />
+
+    <TextView
+        android:id="@+id/register_getcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_yzm"
+        android:layout_toRightOf="@+id/register_login"
+        android:text="获取" 
+        android:textSize="20sp"
+        android:textColor="#00FFFF"/>
+
+</RelativeLayout>

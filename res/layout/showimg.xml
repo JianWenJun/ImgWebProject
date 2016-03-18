@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/showimg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="20dp"
+        android:text="上传的图片" />
+
+    <ImageView
+        android:id="@+id/showimg_cancell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/showimg_title"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/dot" />
+
+    <Button
+        android:id="@+id/showimg_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="2dp"
+        android:text="晒一晒"/>
+
+    <ImageView
+        android:id="@+id/showimg_img"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/showimg_cancell"
+        android:src="@drawable/empty_photo" />
+
+    <EditText
+        android:id="@+id/showimg_des"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/showimg_img"
+        android:layout_marginTop="29dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="图片描述"
+        android:singleLine="true"
+        android:textColor="#FF0000" />
+
+    <EditText
+        android:id="@+id/showimg_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/showimg_des"
+        android:layout_marginTop="29dp"
+        android:background="@null"
+        android:ems="10"
+        android:hint="图片标签用逗号 "
+        android:singleLine="true"
+        android:textColor="#FF0000" />
+
+</RelativeLayout>

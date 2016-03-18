@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="30dp"
+    android:paddingLeft="30dp"
+    android:paddingTop="50dp">
+    <LinearLayout
+        android:id="@+id/menu_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <com.example.view.CircularImage
+            android:id="@+id/menu_user_ico"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/img10" />
+        <TextView
+            android:id="@+id/menu_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:text="请登录"           
+            android:textSize="18sp" />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/menu_header"
+       android:layout_marginTop="7dp"
+        android:background="@drawable/divider"/>
+     <TextView
+        android:id="@+id/menu_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="反馈"      
+        android:textSize="20sp" />
+     <LinearLayout 
+         android:id="@+id/menu_login"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_above="@id/menu_return"
+        android:layout_below="@id/menu_header"
+        android:layout_marginTop="5dp"
+         android:orientation="vertical"
+         >
+        <Button
+        android:id="@+id/button_login"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/login_select"
+        android:text="登录" />
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button_login"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_select"
+        android:text="注册" />         
+     </LinearLayout>
+     
+    <ListView
+        android:id="@+id/menu_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/menu_return"
+        android:layout_below="@id/menu_header"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:visibility="gone"
+        />
+</RelativeLayout>

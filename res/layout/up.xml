@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background="#7f7e7b"      
+    >
+    <RelativeLayout 
+        android:id="@+id/show2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"       
+        >
+       <include 
+           layout="@layout/showimg"          
+           />
+        
+        
+        
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/show1"
+        android:visibility="visible"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content">        
+   <RelativeLayout
+       android:id="@+id/up_camera"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="30dp"
+       android:layout_marginTop="100dp" >
+    
+   <ImageView
+       android:id="@+id/up_camera_img"
+       android:layout_width="75dp"
+       android:layout_height="75dp"
+       android:layout_alignParentLeft="true"
+       android:src="@drawable/up_camera" />
+
+   <TextView
+       android:id="@+id/up_camera_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="16dp"
+       android:layout_toRightOf="@+id/up_camera_img"
+       android:text="拍照"
+       android:textColor="#ffffff"
+       android:textSize="20dp" />
+       
+</RelativeLayout>
+<View 
+        android:id="@+id/up_divider_first"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/up_camera"
+        android:background="@drawable/divider"       
+        />
+
+   <RelativeLayout
+       android:id="@+id/up_mapstore"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="30dp"
+       android:layout_below="@id/up_divider_first"    
+       android:layout_marginTop="5dp" >
+    
+   <ImageView
+       android:id="@+id/up_mapstore_img"
+       android:layout_width="75dp"
+       android:layout_height="75dp"
+       android:layout_alignParentLeft="true"
+       android:src="@drawable/up_mapstorage" />
+
+   <TextView
+       android:id="@+id/up_mapstore_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerVertical="true"
+       android:layout_marginLeft="16dp"
+       android:layout_toRightOf="@+id/up_mapstore_img"
+       android:text="从相册上传图片"
+       android:textColor="#ffffff"
+       android:textSize="20dp" />       
+</RelativeLayout>
+<View 
+        android:id="@+id/up_divider_sec"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@id/up_mapstore"
+        android:background="@drawable/divider"       
+        />
+
+<ImageView
+    android:id="@+id/up_close"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_marginBottom="14dp"
+    android:src="@drawable/up_close" />
+</RelativeLayout>
+</RelativeLayout>

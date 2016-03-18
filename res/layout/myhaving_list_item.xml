@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/news_item_bg" >
+   <com.example.waterfallview.FlowView
+        android:id="@+id/myhaving_list_item_flow"  
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:focusable="false"
+        android:maxHeight="500dip"
+        android:maxWidth="500dip"   
+        android:background="@drawable/empty_photo"     
+        />
+     <ImageView 
+         android:id="@+id/myhaving_list_item_store"
+         android:layout_marginRight="6dp"
+         android:layout_marginTop="6dp"
+         android:layout_width="28dp"
+         android:layout_height="28dp"
+         android:layout_gravity="right|top"
+         android:background="@drawable/img_like"
+         android:visibility="gone"
+         />  
+    <ImageView 
+         android:id="@+id/myhaving_list_item_up"
+         android:layout_marginRight="6dp"
+         android:layout_marginTop="6dp"
+         android:layout_width="28dp"
+         android:layout_height="28dp"
+         android:layout_gravity="right|top"
+         android:background="@drawable/img_delete"
+         android:visibility="visible"
+         />
+</FrameLayout>

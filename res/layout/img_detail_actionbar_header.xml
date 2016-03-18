@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    >
+     <View
+        android:id="@android:id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/img_deatil_actionbar_header_shadow" />
+      <RelativeLayout
+          android:layout_width="fill_parent"
+          android:layout_height="410dp"
+            >
+     <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:id="@+id/img_con"        
+     > 
+     <ImageView
+         android:id="@+id/img_detail"
+         android:layout_gravity="center"
+         android:layout_width="match_parent"
+         android:layout_marginLeft="2dp"
+         android:layout_marginRight="2dp"
+         android:layout_height="match_parent" 
+                
+         android:visibility="visible"
+         />
+      <pl.droidsonroids.gif.GifImageView
+         android:layout_gravity="center"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_marginLeft="2dp"
+         android:layout_marginRight="2dp"
+          android:id="@+id/gif"
+          android:visibility="gone"
+          />
+     </FrameLayout>
+    
+      <LinearLayout
+          android:id="@+id/user_introduce"
+        android:layout_marginTop="2dp"
+         android:layout_below="@id/img_con"
+         android:layout_height="80dp" 
+         android:layout_width="fill_parent"
+         android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+            <com.example.view.CircularImage
+                android:id="@+id/news_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"           
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/img10" />
+            <TextView
+                android:id="@+id/news_uptime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/news_img"
+                android:layout_marginRight="16dp"
+                android:text="2015-6-8"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/news_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/news_img"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/news_img"
+                android:text="用户名"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/news_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/news_username"
+                android:layout_alignLeft="@+id/news_username"
+                android:layout_marginTop="3dp"
+                android:text="介绍" 
+                android:textSize="13sp"/>
+
+        </RelativeLayout> 
+          <LinearLayout
+         android:id="@+id/news_tags"
+         android:layout_width="fill_parent"
+         android:layout_height="20dp"
+         android:orientation="horizontal" 
+         android:layout_marginTop="1dp"  
+         android:layout_marginLeft="2dp" 
+         android:layout_marginRight="40dp"     
+          >
+           <TextView 
+               android:id="@+id/news_tag1"
+               android:layout_width="0px"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+                android:gravity="center"
+                android:text="#标签1"   
+                  android:layout_marginLeft="5dp" 
+                android:background="#00C5CD"
+                android:textSize="13dp"             
+               />
+            <TextView 
+               android:id="@+id/news_tag2"
+               android:layout_width="0px"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:gravity="center"
+                android:layout_marginLeft="7dp" 
+               android:text="#标签2"   
+                 android:background="#00C5CD"
+               android:textSize="13dp"             
+               />
+        <TextView 
+               android:id="@+id/news_tag3"
+               android:layout_width="0px"
+               android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp" 
+               android:layout_weight="1"
+                android:gravity="center"
+               android:text="#标签3"            
+               android:background="#00C5CD"
+               android:textSize="13dp"            
+               />
+     </LinearLayout>        
+    </LinearLayout>  
+     <View 
+         android:layout_above="@id/user_introduce"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="6dp"
+         android:layout_marginLeft="1px"
+        android:layout_marginRight="1px"
+        android:background="#808080"    
+        /> 
+</RelativeLayout>
+</RelativeLayout>
+ <!--      --> 
+  
